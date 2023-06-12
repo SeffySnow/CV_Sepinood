@@ -2,7 +2,7 @@ const Validator = {
     textMessage : 'Alphabets only',
     emailMessage : 'Invalid email format',
     text : function (input) {
-        let pattern = /^[a-z]+$/i;
+        let pattern = /^[\u0600-\u06FFa-z\s]+$/i;
         return pattern.test(input);
     },
     email : function (input) {
