@@ -12,8 +12,9 @@
     {% if error == False %}
     <div class="alert alert-success" role="alert">
         Your message has been sent to me. Thank you!
-       <h3>go to <a href="">home</a> page!</h3> 
+       
     </div>
+    <h5>go to <a href="{% url 'home' %}">home</a> page!</h5> 
     {% else %}
     <div class="alert alert-danger" role="alert">
         Your message not has been sent to me. fuck you!
